@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.wrestlingwithjohners.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name short="Johners Network">Johners Podcasting Network</name>
+    <description>
+        The Wrestling With Johners app.
+    </description>
+    <!-- Shown in app store -->
+    <author email="wwj-matt@gmail.com" href="https://wrestlingwithjohners.com">
+        The Wrestling With Johners Team
+    </author>
+    <!-- The app icon -->
+    <icon src="www/img/logo.png" />
+    <!-- App starting page -->
+    <content src="index.html" />
+    <!-- Allow any any access -->
+    <access origin="*" />
+    <!-- Only allow navigation to the main site -->
+    <allow-navigation href="https://wrestlingwithjohners.com/*" />
+    <!-- Allow navigating to external http(s) URLs -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <!-- Platforms -->
+    <platform name="android">
+        <resource-file src="res/values/colours.xml" target="/app/src/main/res/values/colors.xml" />
+        <icon background="@color/background" foreground="res/android/icon/ldpi.png" density="ldpi" />
+        <icon background="@color/background" foreground="res/android/icon/mdpi.png" density="mdpi" />
+        <icon background="@color/background" foreground="res/android/icon/hdpi.png" density="hdpi" />
+        <icon background="@color/background" foreground="res/android/icon/xhdpi.png" density="xhdpi" />
+        <icon background="@color/background" foreground="res/android/icon/xxhdpi.png" density="xxhdpi" />
+        <icon background="@color/background" foreground="res/android/icon/xxxhdpi.png" density="xxxhdpi" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
